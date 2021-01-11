@@ -323,6 +323,53 @@ ul {
   text-align: center;
 }
 
+.list-team-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+}
+
+.list-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.list-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  fill: #afb1b8;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+}
+
+.link-icon:hover, .link-icon:focus {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
