@@ -556,6 +556,8 @@ textarea {
   fill: var(--accent-color);
 }
 
+/* Team icon */
+
 .list-team-icon {
   display: flex;
   margin-left: 32px;
