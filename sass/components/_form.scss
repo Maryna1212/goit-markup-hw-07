@@ -57,7 +57,7 @@
   fill: $form-icon-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .form-container:focus ~ & {
+  .form-input:focus ~ & {
   fill: $link-accent-color;
  }
 }
@@ -115,33 +115,33 @@ textarea {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-
-  &:checked + .policy-checkbox::before {
-  background-color: $accent-color;
-  background-image: url(../images/check.svg);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.checkbox:checked + .policy-checkbox::before {
+  background-color: $accent-color;
+  background-image: url(/images/check.svg);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .policy-checkbox {
   display: flex;
   align-items: center;
+}
 
-  &::before {
+.policy-checkbox::before {
   display: inline-block;
   content: "";
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  background-image: url(../images/square.svg);
- }
+  background-image: url(/images/square.svg);
 }
 
 .form-button {
   display: inline-block;
   padding: 10px 55px 10px 56px;
   background-color: $accent-color;
-  color: var(--text-white-color);
+  color: $text-white-color;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
