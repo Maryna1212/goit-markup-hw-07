@@ -572,7 +572,7 @@ textarea {
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  background-image: url(/images/square.svg);
+  background-image: url(../../images/square.svg);
 }
 
 .form-button {
